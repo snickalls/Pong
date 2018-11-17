@@ -1,4 +1,6 @@
-import java.awt.Color; 
+import java.awt.Color;
+import java.awt.Rectangle;
+
 
 public class Sprite {
        private int xPosition, yPosition;
@@ -15,6 +17,7 @@ public class Sprite {
       public int getWidth() { return width; }
       public int getHeight() { return height; }
       public Color getColour() { return spriteColour; }
+      
       
       
       public void setColour(Color colour) {
@@ -69,6 +72,7 @@ public class Sprite {
           yVelocity = newYVelocity;
       }
       
+      
       public void setWidth(int newWidth) {
           width = newWidth;
       }
@@ -76,4 +80,10 @@ public class Sprite {
       public void setHeight(int newHeight) {
           height = newHeight;
       }
+      
+      public Rectangle getRectangle() {
+    	    
+    	  return new Rectangle(getXPosition(), getYPosition(), getWidth(), getHeight());
+    	     
+    	   }
   }

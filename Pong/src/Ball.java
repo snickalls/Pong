@@ -1,6 +1,7 @@
 import java.awt.Color;
 
 
+
 public class Ball extends Sprite {
 	
 	
@@ -17,5 +18,6 @@ public class Ball extends Sprite {
 		setInitialPosition(panelWidth / 2 - (getWidth() / 2), panelHeight / 2 - (getHeight() / 2));
 		resetToInitialPosition();
 	}
+
 
 }
